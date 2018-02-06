@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="header">QUIZ QUESTIONS FILM</string>
+
+    <!--First question-->
+    <string name="questionsOne">How many oscars did the Titanic movie got?</string>
+    <string name="questionsOneFirst">Write your answer</string>
+
+    <!--Second question-->
+    <string name="questionsTwo">What is the house number of the Simpsons?</string>
+    <string name="questionsTwoFirst">Number 745</string>
+    <string name="questionsTwoSecond">Number 742</string>
+
+    <!--Third question-->
+    <string name="questionsThird">Who is the protagonist in the Last Action Hero film?</string>
+    <string name="questionsThreeFirst">Arnold</string>
+    <string name="questionsThreeSecond">Terminator </string>
+    <string name="questionsThreeThird">Schwarzenegger</string>
+
+    <!--Fourth question-->
+    <string name="questionsFourth">What is the name of the prison in the film The Rock?</string>
+    <string name="questionsFourFirst">Alcatraz</string>
+    <string name="questionsFourSecond">Shawshank</string>
+
+    <!--Button answer-->
+    <string name="buttonAnswer">Answer</string>
+</resources>

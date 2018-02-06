@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Тест характера.</string>
+    <string name="header">Тест из 4 вопросов: узнай свой характер.</string>
+    <string name="explanation">Простой тест из четырёх вопросов расскажет о ваших чертах характера. Потратьте минуту времени и узнайте себя немного лучше.</string>
+    <string name="letsDoIt">Итак, вот четыре вопроса:</string>
+    <string name="questionsOne">1. Сложите пальцы в замок</string>
+    <string name="questionsOneFirst">Если большой палец левой руки оказался сверху, нажмите сюда</string>
+    <string name="questionsOneSecond">Если сверху палец правой руки, нажмите сюда</string>
+    <string name="questionsTwo">2. Представьте, что вам надо прицелиться, закройте один глаз</string>
+    <string name="questionsTwoFirst">Если вы закрыли правый глаз, нажмите сюда</string>
+    <string name="questionsTwoSecond">Если левый, нажмите сюда</string>
+    <string name="questionsThird">3. Скрестите руки на груди</string>
+    <string name="questionsThreeFirst">Какая рука сверху? Если правая, нажмите сюда</string>
+    <string name="questionsThreeSecond">Если левая, нажмите сюда</string>
+    <string name="questionsFourth">4. Похлопайте в ладоши</string>
+    <string name="questionsFourFirst">Если левая рука сверху, нажмите сюда</string>
+    <string name="questionsFourSecond">Если правая, нажмите сюда</string>
+    <string name="postscript">"P.S. Главное — не воспринимайте результаты слишком серьёзно. :) "</string>
+    <string name="buttonAnswer">Ответ</string>
+    <string name="buttonReset">Сброс</string>
+    <string name="textAnswer">Ваш результат:</string>
+</resources>
