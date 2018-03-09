@@ -1,143 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorDivider">
+
+  <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorDivider">
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding"
+    android:orientation="vertical"
+    tools:context="com.example.android.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <!--Introduction to the test and the beginning of the test-->
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="@string/header"
+      android:textAlignment="center"
+      android:textColor="@color/colorPrimaryText"
+      android:textSize="@dimen/text_size_header"/>
+
+    <!--First question-->
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_top"
+      android:text="@string/questionsOne"
+      android:textColor="@color/colorPrimaryText"
+      android:textSize="@dimen/all_text_size"/>
+    <EditText
+      android:id="@+id/questionsOneFirst"
+      android:textStyle="italic"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/questionsOneFirst"
+      android:textSize="@dimen/all_text_size"/>
+
+    <!--Second question-->
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_top"
+      android:text="@string/questionsTwo"
+      android:textColor="@color/colorPrimaryText"
+      android:textSize="@dimen/all_text_size"/>
+
+    <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <RadioButton
+        android:id="@+id/questionsTwoFirst"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
-        tools:context="com.example.android.MainActivity">
+        android:text="@string/questionsTwoFirst"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="@dimen/all_text_size"/>
 
-        <!--Introduction to the test and the beginning of the test-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/header"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryText"
-            android:textSize="30sp" />
+      <RadioButton
+        android:id="@+id/questionsTwoSecond"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questionsTwoSecond"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="@dimen/all_text_size"/>
+    </RadioGroup>
 
-        <!--First question-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/questionsOne"
-            android:textColor="@color/colorPrimaryText"
-            android:textSize="18sp" />
-        <EditText
-            android:id="@+id/questionsOneFirst"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:hint="@string/questionsOneFirst"/>
+    <!--Third question-->
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_top"
+      android:text="@string/questionsThird"
+      android:textColor="@color/colorPrimaryText"
+      android:textSize="@dimen/all_text_size"/>
 
-        <!--Second question-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/questionsTwo"
-            android:textColor="@color/colorPrimaryText"
-            android:textSize="18sp" />
+    <CheckBox
+      android:id="@+id/questionsThreeFirst"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/questionsThreeFirst"
+      android:textSize="@dimen/all_text_size"/>
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+    <CheckBox
+      android:id="@+id/questionsThreeSecond"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/questionsThreeSecond"
+      android:textSize="@dimen/all_text_size"/>
 
-            <RadioButton
-                android:id="@+id/questionsTwoFirst"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionsTwoFirst"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="italic" />
+    <CheckBox
+      android:id="@+id/questionsThreeThird"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/questionsThreeThird"
+      android:textSize="@dimen/all_text_size"/>
 
-            <RadioButton
-                android:id="@+id/questionsTwoSecond"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionsTwoSecond"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="italic" />
-        </RadioGroup>
+    <!--Fourth question-->
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_top"
+      android:text="@string/questionsFourth"
+      android:textColor="@color/colorPrimaryText"
+      android:textSize="@dimen/all_text_size"/>
 
-        <!--Third question-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/questionsThird"
-            android:textColor="@color/colorPrimaryText"
-            android:textSize="18sp" />
+    <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/questionsThreeFirst"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/questionsThreeFirst" />
+      <RadioButton
+        android:id="@+id/questionsFourFirst"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questionsFourFirst"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="@dimen/all_text_size"/>
 
-        <CheckBox
-            android:id="@+id/questionsThreeSecond"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/questionsThreeSecond" />
+      <RadioButton
+        android:id="@+id/questionsFourSecond"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questionsFourSecond"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="@dimen/all_text_size"/>
+    </RadioGroup>
 
-        <CheckBox
-            android:id="@+id/questionsThreeThird"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/questionsThreeThird" />
+    <!--Buttons answer-->
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
 
-        <!--Fourth question-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/questionsFourth"
-            android:textColor="@color/colorPrimaryText"
-            android:textSize="18sp" />
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickButton"
+        android:text="@string/buttonAnswer"
+        android:textSize="@dimen/all_text_size"
+        tools:ignore="ButtonStyle"/>
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:id="@+id/questionsFourFirst"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionsFourFirst"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="italic" />
-
-            <RadioButton
-                android:id="@+id/questionsFourSecond"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/questionsFourSecond"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="italic" />
-        </RadioGroup>
-
-        <!--Buttons answer-->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:onClick="clickButton"
-                android:text="@string/buttonAnswer"
-                tools:ignore="ButtonStyle" />
-
-        </RelativeLayout>
-    </LinearLayout>
+    </RelativeLayout>
+  </LinearLayout>
 
 </ScrollView>
